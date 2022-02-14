@@ -9,40 +9,61 @@ body {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
 }
 
 .profile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: rebeccapurple;
-  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
-  border-radius: 50%;
+  box-shadow: inset 2px 2px 4px rgba(255, 255, 255, 0.5);
+  border-radius: 100%;
   width: 48px;
   height:  48px;
+  margin: auto 8px;
+}
+
+.left {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .logo {
+  display: flex;
   color: rebeccapurple;
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  margin: auto 16px;
 }
 
-button {
+#right-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.notifications {
   border: none;
   border-radius: 8px;
   background: rebeccapurple;
-  color: white;
-  padding: 8px 24px;
+  margin: auto 8px;
 }
 
 a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+  margin: 0 10px;
 }
 
 ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0 24px;
   list-style-type: none;
 }
